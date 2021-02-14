@@ -21,8 +21,9 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
+    <!-- <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+    <script defer src="https://firebasestorage.googleapis.com/v0/b/ultimate-devel.appspot.com/o/Javascripts%2Finit.js?alt=media&token=437eb83a-3f3e-448d-8a88-36c2ae6dccda"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css">
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -39,6 +40,7 @@
     </style>
   </head>
   <body>
+    <div id="header-div"></div>
     <div id="message">
       <h2>Welcome</h2>
       <h1>Firebase Hosting Setup Complete</h1>
@@ -48,14 +50,6 @@
     <p id="load">Firebase SDK Loading&hellip;</p>
     <div id="google_translate_element"></div>
 
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script>
-    
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
@@ -94,5 +88,15 @@
         }
       });
     </script>
+    <script src="https://utkarshsinghjadon.github.io/ultidevel/public/js/header.js"></script>
+    
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      
   </body>
 </html>
